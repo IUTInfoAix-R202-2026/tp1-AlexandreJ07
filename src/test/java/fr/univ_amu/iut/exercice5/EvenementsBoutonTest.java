@@ -6,7 +6,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.api.FxRobot;
@@ -62,7 +61,7 @@ class EvenementsBoutonTest {
 
   // --- Étape 3 : ajouter un bouton ---
 
-  @Disabled("Retire cette annotation pour activer le test")
+  // @Disabled("Retire cette annotation pour activer le test")
   @Test
   void leBoutonExiste(FxRobot robot) {
     Button bouton = robot.lookup("#bouton-clique-moi").queryAs(Button.class);
